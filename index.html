@@ -1,176 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="body">
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <div class="container">
-            <nav class="nav">
-                <ul>
-                    <li><a href="#" onclick="navigateTo('home')">Home</a></li>
-                    <li><a href="#" onclick="navigateTo('projects')">Projects</a></li>
-                    <li><a href="#" onclick="navigateTo('repositories')">Repositories</a></li>
-                    <li><a href="#" onclick="navigateTo('about')">About Me</a></li>
-                    <li><a href="#" onclick="navigateTo('resume')">Resume</a></li>
-                    <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <section id="home">
+    <div class="home-hover-box fade-section">
+      <h1 id="typing-text">Hey there! I’m LJ, Let’s Explore.</h1>
+      <h5>I design and develop projects that turn ideas into functional, real-world applications.</h5>
+      <a href="#about" class="scroll-down">&#8595;</a>
+    </div>
+  </section>
 
+  <section id="about" class="container fade-section">
+    <h2>About Me</h2>
+    <div class="person-card">
+  <img src="lj.jpg" alt="lj">
+  <h5>Lovelaine Joy Tasic</h5>
+  <p class="tagline">“Passionate about technology and problem-solving.”</p>
+  <div class="info">
+    <p>📍 Tankulan, Manolo Fortich, Bukidnon</p>
+    <p>📧 <a href="mailto:20221063@nbsc.edu.ph">20221063@nbsc.edu.ph</a></p>
+    <p>💻 GitHub: <a href="https://github.com/LOVELAINEJOYTASIC" target="_blank">LOVELAINEJOYTASIC</a></p>
+  </div>
+</div>
 
-    <main id="home" class="container">
-        <div class="home-hover-box">
-            <h1 id="typing-text">Hi, Welcome to My Portfolio</h1>
-            <h5>Aspiring IT Professional</h5>
-        </div>
-    </main>
+  </section>
 
-    
-    <main id="about" class="container">
-        <section class="person-card">
-            <img src="re.jpg" alt="Your Photo">
-            <h5>Lovelaine Joy Tasic</h5>
-            <p>4th year ICS student</p>
-            <p>ID No. 2022063</p>
-            <p>Github:
-                <a href="https://github.com/LOVELAINEJOYTASIC" target="_blank">LOVELAINEJOYTASIC</a>
-            </p>
-        </section>
-    </main>
+  <section id="skills" class="container fade-section">
+    <h2>My Skills</h2>
+    <div class="skill">
+      <p>HTML & CSS</p>
+      <div class="skill-bar"><div class="skill-fill" style="--width:95%;"></div></div>
+    </div>
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="skill-bar"><div class="skill-fill" style="--width:85%;"></div></div>
+    </div>
+    <div class="skill">
+      <p>Python</p>
+      <div class="skill-bar"><div class="skill-fill" style="--width:80%;"></div></div>
+    </div>
+    <div class="skill">
+      <p>Networking</p>
+      <div class="skill-bar"><div class="skill-fill" style="--width:90%;"></div></div>
+    </div>
+  </section>
 
-    
-    <main id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>IT35 Lab</h3>
-                <a href="https://github.com/LOVELAINEJOYTASIC/it35-lab" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>JPost</h3>
-                <a href="https://github.com/LOVELAINEJOYTASIC/jpost" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Bouncing Ball Activity</h3>
-                <a href="https://github.com/LOVELAINEJOYTASIC/Bouncing-Ball-Act" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Landlord System</h3>
-                <a href="https://github.com/LOVELAINEJOYTASIC/landlord" target="_blank">View Project</a>
-            </div>
-        </div>
-    </main>
-
-    
-    <main id="repositories" class="container">
-         <h2>Repositories</h2>
-
-        <div class="repo-grid">
-            <div class="repo-card">
-                <h3>IT35 lab</h3>
-                <a href="https://github.com/LOVELAINEJOYTASIC/IT35-lab" target="_blank">View Repository</a>
-            </div>
-
-            <div class="repo-card">
-                <h3>jpost</h3>
-                <a href="https://github.com/LOVELAINEJOYTASIC/jpost" target="_blank">View Repository</a>
-            </div>
-
-            <div class="repo-card">
-                <h3>Bouncing Ball</h3>
-                <a href="https://github.com/LOVELAINEJOYTASIC/Bouncing-Ball-Act" target="_blank">View Repository</a>
-            </div>
-
-            <div class="repo-card">
-                <h3>Appdev</h3>
-                <a href="https://github.com/LOVELAINEJOYTASIC/IT35A-App.DevET" target="_blank">View Repository</a>
-            </div>
-            <div class="repo-card">
-                <h3>Landlord</h3>
-                <a href="https://github.com/LOVELAINEJOYTASIC/Landlord" target="_blank">View Repository</a>
-            </div>
-
-                 <div class="repo-card">
-                <h3>Enterprise</h3>
-                <a href="https://github.com/LOVELAINEJOYTASIC/IT38A-ENTERPRISE-SYSTEM" target="_blank">View Repository</a>
-            </div>
-            </div>
-    </main>
-
-    
-    <main id="resume" class="resume">
-        <div id="resume-content">
-            <h3>Lovelaine Joy Tasic</h3>
-            <p>Tankulan, Manolo Fortich, Bukidnon</p>
-            <p>Email: 20221063@nbsc.edu.ph</p>
-            <p>Phone: 09267982648</p>
-
-            <h3>Education</h3>
-            <p>Northern Bukidnon State College Bachelor of Information and Technology 2025-2026</p>
-            <p>Manolo Fortich National High School Senior High 2021-2022</p>
-            <p>Manolo Fortich National High School Junior High 2019-2021</p>
-            <p>Manolo Fortich Central Elementary School 2015-2016</p>
-            <p>Patag Christian School Kindergarten 2008</p>
-
-            <h3>Experience</h3>
-            <p>INTERNSHIP JOB — 2024 Information Management Office NBSC</p>
-            <p>SUMMER JOB — 2022 Public Employment Service Office</p>
-            <p>SALES CLERK — 2021-2022 Convenience Store</p>
-
-            <h3>Skills</h3>
-            <p>Interpersonal Skills</p>
-            <p>Adaptability</p>
-            <p>Management Skills</p>
-            <p>Computer Literate</p>
+  <section id="projects" class="container fade-section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>IT35 Lab</h3>
+      <a href="https://github.com/LOVELAINEJOYTASIC/it35-lab" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Bouncing Ball</h3>
+      <a href="https://github.com/LOVELAINEJOYTASIC/Bouncing-Ball-Act" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>jPost</h3>
+      <a href="https://github.com/LOVELAINEJOYTASIC/jpost" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Sample App</h3>
+      <a href="https://github.com/LOVELAINEJOYTASIC/RAVEN" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Portfolio (jQuery)</h3>
+      <a href="https://github.com/LOVELAINEJOYTASIC/Portfolio" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Landlord</h3>
+      <a href="https://github.com/LOVELAINEJOYTASIC/Kape" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Enterprise System</h3>
+      <a href="https://github.com/LOVELAINEJOYTASIC/IT38A-ENTERPRISE-SYSTEM" target="_blank">View Project</a>
+    </div>
+  </div>
+</section>
 
 
-            <h3>Language</h3>
-            <p>Filipino</p>
-            <p>Visayan</p>
-            <p>English</p>
-           
+  <section id="contact" class="contact fade-section">
+  <h2>Contact Me</h2>
+  <p>You can reach me directly through my social accounts:</p>
+  <div class="social-links">
+    <a href="https://github.com/LOVELAINEJOYTASIC" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://www.linkedin.com/in/LOVELAINEJOYTASIC" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://twitter.com/LOVELAINEJOYTASIC" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+    <a href="https://www.facebook.com/LOVELAINEJOYTASIC" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+    <a href="https://www.instagram.com/LOVELAINEJOYTASIC" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  </div>
+</section>
 
-        </div>
-    </main>
+    </form>
+  </section>
 
-    
-    <main id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p class="contact-subtitle">I’d love to hear from you! Send me a message below.</p>
-        <form id="contactForm" class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+  <footer>
+    <p>Connect with me:</p>
+    <div class="social-links">
+      <a href="https://github.com/LOVELAINEJOYTASIC" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2026 LJ Portfolio</p>
+  </footer>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 LJ Tasic. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
