@@ -391,7 +391,6 @@ section { animation: fadeUp 0.8s ease both; }
   to { opacity: 1; transform: translateY(0); }
 }
 
-
 @media (max-width: 768px) {
   #typing-text { font-size: 42px; }
   .home-hover-box { padding: 55px 25px; }
