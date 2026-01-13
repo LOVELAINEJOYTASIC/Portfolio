@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+                    <li><a href="#" onclick="navigateTo('projects')">Projects</a></li>
+                    <li><a href="#" onclick="navigateTo('repositories')">Repositories</a></li>
+                    <li><a href="#" onclick="navigateTo('about')">About Me</a></li>
+                    <li><a href="#" onclick="navigateTo('resume')">Resume</a></li>
+                    <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main id="home" class="container">
+        <div class="home-hover-box">
+            <h1 id="typing-text">Hi, Welcome to My Portfolio</h1>
+            <h5>Aspiring IT Professional</h5>
+        </div>
+    </main>
+
+    
+    <main id="about" class="container">
+        <section class="person-card">
+            <img src="re.jpg" alt="Your Photo">
+            <h5>Lovelaine Joy Tasic</h5>
+            <p>4th year ICS student</p>
+            <p>ID No. 2022063</p>
+            <p>Github:
+                <a href="https://github.com/LOVELAINEJOYTASIC" target="_blank">LOVELAINEJOYTASIC</a>
+            </p>
+        </section>
+    </main>
+
+    
+    <main id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>IT35 Lab</h3>
+                <a href="https://github.com/LOVELAINEJOYTASIC/it35-lab" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>JPost</h3>
+                <a href="https://github.com/LOVELAINEJOYTASIC/jpost" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Bouncing Ball Activity</h3>
+                <a href="https://github.com/LOVELAINEJOYTASIC/Bouncing-Ball-Act" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Landlord System</h3>
+                <a href="https://github.com/LOVELAINEJOYTASIC/landlord" target="_blank">View Project</a>
+            </div>
+        </div>
+    </main>
+
+    
+    <main id="repositories" class="container">
+         <h2>Repositories</h2>
+
+        <div class="repo-grid">
+            <div class="repo-card">
+                <h3>IT35 lab</h3>
+                <a href="https://github.com/LOVELAINEJOYTASIC/IT35-lab" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>jpost</h3>
+                <a href="https://github.com/LOVELAINEJOYTASIC/jpost" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>Bouncing Ball</h3>
+                <a href="https://github.com/LOVELAINEJOYTASIC/Bouncing-Ball-Act" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>Appdev</h3>
+                <a href="https://github.com/LOVELAINEJOYTASIC/IT35A-App.DevET" target="_blank">View Repository</a>
+            </div>
+            <div class="repo-card">
+                <h3>Landlord</h3>
+                <a href="https://github.com/LOVELAINEJOYTASIC/Landlord" target="_blank">View Repository</a>
+            </div>
+
+                 <div class="repo-card">
+                <h3>Enterprise</h3>
+                <a href="https://github.com/LOVELAINEJOYTASIC/IT38A-ENTERPRISE-SYSTEM" target="_blank">View Repository</a>
+            </div>
+            </div>
+    </main>
+
+    
+    <main id="resume" class="resume">
+        <div id="resume-content">
+            <h3>Lovelaine Joy Tasic</h3>
+            <p>Tankulan, Manolo Fortich, Bukidnon</p>
+            <p>Email: 20221063@nbsc.edu.ph</p>
+            <p>Phone: 09267982648</p>
+
+            <h3>Education</h3>
+            <p>Northern Bukidnon State College Bachelor of Information and Technology 2025-2026</p>
+            <p>Manolo Fortich National High School Senior High 2021-2022</p>
+            <p>Manolo Fortich National High School Junior High 2019-2021</p>
+            <p>Manolo Fortich Central Elementary School 2015-2016</p>
+            <p>Patag Christian School Kindergarten 2008</p>
+
+            <h3>Experience</h3>
+            <p>INTERNSHIP JOB — 2024 Information Management Office NBSC</p>
+            <p>SUMMER JOB — 2022 Public Employment Service Office</p>
+            <p>SALES CLERK — 2021-2022 Convenience Store</p>
+
+            <h3>Skills</h3>
+            <p>Interpersonal Skills</p>
+            <p>Adaptability</p>
+            <p>Management Skills</p>
+            <p>Computer Literate</p>
+
+
+            <h3>Language</h3>
+            <p>Filipino</p>
+            <p>Visayan</p>
+            <p>English</p>
+           
+
+        </div>
+    </main>
+
+    
+    <main id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-subtitle">I’d love to hear from you! Send me a message below.</p>
+        <form id="contactForm" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 LJ Tasic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
