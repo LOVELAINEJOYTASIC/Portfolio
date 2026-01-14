@@ -16,7 +16,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url('backgroundphoto.jpg');
+  background-image: url('zero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
