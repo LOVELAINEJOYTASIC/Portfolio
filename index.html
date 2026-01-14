@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LJ Portfolio</title>
 
-  <!-- Fonts -->
+ 
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome -->
+ 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- CSS -->
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,23 +28,23 @@
   </nav>
 </header>
 
-<!-- HOME SECTION -->
+
 <section id="home">
   <div class="home-layout fade-section">
 
-    <!-- LEFT CARD: Typing Text, Buttons, Socials -->
+   
     <div class="home-hover-box">
-      <!-- Animated Typing -->
+  
       <h1 id="typing-text"></h1>
       <h5>Programmer | Networking Specialist | Cybersecurity Analyst</h5>
 
-      <!-- Call-to-Action Buttons -->
+ 
       <div class="home-buttons">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-secondary">Contact Me</a>
       </div>
 
-      <!-- Social Icons -->
+ 
       <div class="home-socials">
         <a href="https://facebook.com/LOVELAINEJOYTASIC" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://github.com/LOVELAINEJOYTASIC" target="_blank"><i class="fab fa-github"></i></a>
@@ -54,7 +54,7 @@
       <a href="#about" class="scroll-down">↓</a>
     </div>
 
-    <!-- RIGHT IMAGE -->
+  
     <div class="home-image floating">
       <img src="formal.png" alt="LJ Photo">
     </div>
@@ -62,7 +62,7 @@
   </div>
 </section>
 
-<!-- WORK EXPERIENCE -->
+
 <section id="work" class="container fade-section">
   <h2>Work Experience</h2>
 
@@ -83,7 +83,7 @@
   </div>
 </section>
 
-<!-- ABOUT -->
+
 <section id="about" class="container fade-section">
   <h2>About Me</h2>
 
@@ -119,7 +119,7 @@
   </div>
 </section>
 
-<!-- SKILLS -->
+
 <section id="skills">
   <h2>My Skills</h2>
 
@@ -144,7 +144,7 @@
   </div>
 </section>
 
-<!-- PROJECTS & FEATURED PROJECT -->
+
 <section id="projects" class="container fade-section">
   <h2> Featured Project</h2>
 
@@ -202,7 +202,29 @@
   </div>
 </section>
 
-<!-- CONTACT -->
+
+<section id="professional-summary" class="container fade-section">
+  <h2>Professional Summary</h2>
+  <div class="summary-layout">
+    <div class="summary-text">
+      <p>
+        I am a passionate IT professional with a strong interest in <strong>Hardware</strong>, <strong>GIS</strong>, <strong>Networking</strong>, and <strong>IoT</strong>. 
+        I enjoy designing innovative solutions that integrate technology and real-world applications. 
+        With hands-on experience in systems administration, web development, and spatial data analysis, I aim to create impactful, efficient, and smart solutions for organizations.
+      </p>
+      <p>
+        Always eager to learn, I love combining creative problem-solving with technical expertise to bring ideas to life.
+      </p>
+    </div>
+    <div class="summary-icons">
+      <img src="hardware.jpg" alt="Hardware Icon" title="Hardware">
+      <img src="gis.jpg" alt="GIS Icon" title="GIS">
+      <img src="networking.png" alt="Networking Icon" title="Networking">
+      <img src="iot.jpg" alt="IoT Icon" title="IoT">
+    </div>
+  </div>
+</section>
+
 <section id="contact" class="contact fade-section">
   <h2>Contact Me</h2>
   <p>Get in touch with me directly through social media or send me a message:</p>
@@ -227,7 +249,7 @@
 </footer>
 
 <script>
-  // Typing animation
+
   const text = "Hi, I am Lj Tasic";
   const typing = document.getElementById("typing-text");
   let index = 0;
@@ -240,7 +262,7 @@
   }
   window.addEventListener("load", type);
 
-  // Skills animation
+
   document.querySelectorAll('.skill-fill').forEach(skill => {
     window.addEventListener('scroll', () => {
       if (skill.getBoundingClientRect().top < window.innerHeight * 0.85) {
@@ -249,7 +271,7 @@
     });
   });
 
-  // About accordion
+ 
   document.querySelectorAll('.about-toggle').forEach(toggle => {
     toggle.addEventListener('click', () => {
       toggle.classList.toggle('active');
